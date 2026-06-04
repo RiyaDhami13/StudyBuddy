@@ -1,5 +1,6 @@
 import os
 
+subjects = []
 def clear_screen():
   os.system('cls' if os.name == 'nt' else 'clear')
 
@@ -15,10 +16,13 @@ while True:
   choice = int(input("Enter your choice(1-3):").strip())
 
   if choice == 1:
-    input("Enter the subject name:")
+    name = input("Enter the subject name:")
+    subjects.append(name)
   elif choice == 2:
     print("Subjects:")
   elif choice == 3:
     print("Exiting....")
+    break   
   else:
     input("Invalid choice.Press Enter to continue....")
+
