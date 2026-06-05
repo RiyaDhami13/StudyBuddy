@@ -75,7 +75,7 @@ class StudyBuddyApp:
     
     print("Subjects are:")
     for index,item in enumerate(self.subjects,start = 1):
-      print(f"{index}. {index.get("name")} (Difficulty level:{index.get("difficulty")})")
+      print(f"{index}. {item.get("name")} (Difficulty level:{item.get("difficulty")})")
 
   def run(self):
     while True:
